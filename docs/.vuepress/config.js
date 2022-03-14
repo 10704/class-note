@@ -4,5 +4,5 @@ module.exports = {
   
   theme: "@vuepress/theme-default",
   themeConfig: {
-    logo: "https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.imeitou.com%2Fkatong%2F198898.html&psig=AOvVaw1sPtTjpubcLrG-DRUYEQXa&ust=1647334856048000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCOCm8dqexfYCFQAAAAAdAAAAABAH"
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz2cfmhzJgVNmHpyTUKmsAeCbiIewaKUV9Lg&usqp=CAU"
 };
