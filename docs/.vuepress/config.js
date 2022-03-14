@@ -4,6 +4,5 @@ module.exports = {
   
   theme: "@vuepress/theme-default",
   themeConfig: {
-    logo: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn0.popo.tw%2Fnote%2F38%2F147622%2F%2F6447865%2F201510191701401.jpg&imgrefurl=https%3A%2F%2Fwww.popo.tw%2Fnotes%2F6447865&tbnid=Dmep_HWC8fwi5M&vet=12ahUKEwiC8eX2_L32AhUG8ZQKHZ2ZBToQMygHegUIARDHAQ..i&docid=qEHxwy6-8G-GUM&w=1200&h=851&q=%E5%8D%A1%E9%80%9A%E5%9C%96%E6%A1%88&hl=zh-TW&ved=2ahUKEwiC8eX2_L32AhUG8ZQKHZ2ZBToQMygHegUIARDHAQ"
-  },
+    logo: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fgw.alicdn.com%2Fi1%2F680302322%2FO1CN01w13ju61T1WGoVa75k_!!680302322.jpg_500x500Q75.jpg_.webp&imgrefurl=https%3A%2F%2Fworld.taobao.com%2Fitem%2F620329232725.htm&tbnid=J3caAyBmpae5tM&vet=10CNQBEDMolQNqFwoTCOCm8dqexfYCFQAAAAAdAAAAABAE..i&docid=4G6wz6WlazGfNM&w=500&h=500&q=%E5%8D%A1%E9%80%9A%E5%9C%96%E6%A1%88&ved=0CNQBEDMolQNqFwoTCOCm8dqexfYCFQAAAAAdAAAAABAE"
 };
