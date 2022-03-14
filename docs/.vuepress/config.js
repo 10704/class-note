@@ -1,48 +1,9 @@
-const fs = require("fs");
-const path = require("path");
-
-const mdFile = ".md";
-const rootFolder = path.dirname(__dirname);
-const rootfiles = fs.readdirSync(rootFolder);
-const folders = rootfiles.filter(
-  (item) => path.extname(item) != mdFile && item != ".vuepress"
-);
-
 module.exports = {
-  title: "Vuepress template",
-  description: "Vuepress 模板",
+  title: "基礎程式設計筆記",
+  description: "This is my first vuepress site",
+  
+  theme: "@vuepress/theme-default",
   themeConfig: {
-    navbar: [...getNavBar()],
-    sidebar: { ...getSideBar() },
+    logo: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn0.popo.tw%2Fnote%2F38%2F147622%2F%2F6447865%2F201510191701401.jpg&imgrefurl=https%3A%2F%2Fwww.popo.tw%2Fnotes%2F6447865&tbnid=Dmep_HWC8fwi5M&vet=12ahUKEwiC8eX2_L32AhUG8ZQKHZ2ZBToQMygHegUIARDHAQ..i&docid=qEHxwy6-8G-GUM&w=1200&h=851&q=%E5%8D%A1%E9%80%9A%E5%9C%96%E6%A1%88&hl=zh-TW&ved=2ahUKEwiC8eX2_L32AhUG8ZQKHZ2ZBToQMygHegUIARDHAQ"
   },
 };
-
-function getNavBar() {
-  const navbar = [];
-  folders.forEach((folder) => {
-    navbar.push({
-      text: folder.toUpperCase(),
-      link: `/${folder}/`,
-    });
-  });
-  return navbar;
-}
-
-function getSideBar() {
-  const sidebar = {};
-  folders.forEach((folder) => {
-    sidebar[`/${folder}/`] = [];
-    const folderFiles = fs.readdirSync(path.join(rootFolder, folder));
-    const children = [];
-    folderFiles
-      .filter((item) => item.toLowerCase() != "readme.md")
-      .forEach((file) => {
-        children.push(`/${folder}/${file}`);
-      });
-    sidebar[`/${folder}/`].push({
-      text: folder.toUpperCase(),
-      children: [`/${folder}/`, ...children],
-    });
-  });
-  return sidebar;
-}
